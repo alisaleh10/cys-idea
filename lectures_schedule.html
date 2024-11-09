@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cys_idea.css">
+    <title>جدول المحاضرات</title>
+</head>
+<body>
+    <header>
+        <img src="images/خلفية شفافه بيضاBlue and Purple Illustrative Brain Tech Artificial Intelligence Logo.png" alt="شعار الموقع" class="logo">
+        <h1></h1>
+        <div id="currentTime"></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="lectures_schedule.html">جدول المحاضرات</a></li>
+            <li><a href="daily_tasks.html">جدول المهام اليومية</a></li>
+            <li><a href="exam_schedule.html">جدول الامتحانات</a></li>
+            <li><a href="about_us.html">من نحن</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>إضافة محاضرة جديدة</h2>
+        <label for="subjectName"></label>
+        <input type="text" id="subjectName" placeholder="اسم المحاضرة">
+        
+        <label for="startTime">وقت البدء:</label>
+        <input type="time" id="startTime">
+        
+        <label for="endTime">الإنتهاء:</label>
+        <input type="time" id="endTime">
+        
+        <label for="dayOfWeek">اليوم:</label>
+        <select id="dayOfWeek">
+            <option value="الأحد">الأحد</option>
+            <option value="الإثنين">الإثنين</option>
+            <option value="الثلاثاء">الثلاثاء</option>
+            <option value="الأربعاء">الأربعاء</option>
+            <option value="الخميس">الخميس</option>
+            <option value="السبت">السبت</option>
+        </select>
+        
+        <button class="add-button" onclick="addLecture()">إضافة محاضرة</button>
+        
+        <h2>المحاضرات المضافة</h2>
+        <table id="weeklySchedule">
+            <thead>
+                <tr>
+                    <th>اليوم</th>
+                    <th>المحاضرة</th>
+                    <th>وقت البدء</th>
+                    <th>وقت الإنتهاء</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- سيتم ملء المحتوى هنا -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>© 2024 CYS IDEA - جميع الحقوق محفوظة</p>
+    </footer>
+    <script src="cys_idea.js"></script>
+</body>
+</html>

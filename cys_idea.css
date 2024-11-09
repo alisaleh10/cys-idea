@@ -1,0 +1,222 @@
+/* إعدادات عامة */
+* {
+    box-sizing: border-box; /* جعل حجم العناصر يشمل الحواف والحشو */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشو الافتراضي */
+}
+
+/* خلفية العناوين الي فوق */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* تحديد نوع الخط */
+    direction: rtl; /* تعيين اتجاه الكتابة من اليمين إلى اليسار */
+    background-color: #f3f4f6; /* لون خلفية الصفحة */
+    color: #333; /* لون النص */
+}
+
+/* الصفحات ماعدا الرئيسية body */
+.container {
+    background-color: #ffffff; /* لون خلفية الحاوية */
+    margin: 10px auto; /* هوامش تلقائية في الجانبين مع هوامش علوية وسفلية */
+    padding: 20px; /* إضافة حشو داخلي */
+    border-radius: 15px; /* زوايا دائرية للحاوية */
+    transition: transform 0.9s; /* تأثير الانتقال عند تغيير الحالة */
+}
+
+/* تصميم الهيدر */
+header {
+    background: linear-gradient(2deg, #012e5c, #005aa9); /* تدرج لوني للهيدر */
+    color: #fff; /* لون النص داخل الهيدر */
+    padding: 30px; /* حشو داخلي للهيدر */
+    text-align: center; /* محاذاة النص في المنتصف */
+    margin: 10px auto; /* هوامش تلقائية */
+    border-radius: 15px; /* زوايا دائرية للهيدر */
+}
+
+/* لوقو البدايه */
+header img {
+    width: 490px; /* عرض الصورة */
+    margin-bottom: 10px; /* هوامش سفلية للصورة */
+}
+
+/* العنوان */
+h1 {
+    font-size: 2rem; /* حجم الخط للعناوين الرئيسية */
+    margin-bottom: 20px; /* هوامش سفلية */
+}
+
+h2 {
+    color: #003366; /* لون النص للعناوين الفرعية */
+    font-size: 1.5rem; /* حجم الخط للعناوين الفرعية */
+    margin-top: 20px; /* هوامش علوية */
+}
+
+/* خلفية ازرار التنقل */
+nav {
+    background-color: #003366; /* لون خلفية شريط التنقل */
+    padding: 20px; /* حشو داخلي لشريط التنقل */
+    text-align: center; /* محاذاة النص في المنتصف */
+    border-radius: 15px; /* زوايا دائرية لشريط التنقل */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* إضافة ظل لشريط التنقل */
+}
+
+nav ul {
+    list-style-type: none; /* إزالة نقاط القائمة */
+    padding: 0; /* إزالة الحشو */
+}
+
+/* محتوى ازرار الصفحات */
+nav ul li {
+    display: inline; /* عرض العناصر في صف واحد */
+    margin: 0 30px; /* هوامش جانبية */
+}
+
+/* محتوى نص الصفحات الرئيسية */
+nav ul li a {
+    color: #fff; /* لون النص للروابط */
+    text-decoration: none; /* إزالة خط تحت الروابط */
+    font-weight: bold; /* جعل النص عريض */
+    font-size: 20px; /* حجم الخط للروابط */
+    padding: 10px 15px; /* حشو داخلي للروابط */
+    border-radius: 5px; /* زوايا دائرية للروابط */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* تأثير الانتقال */
+    display: inline-block; /* جعل العنصر يأخذ مساحة */
+}
+
+nav ul li a:hover {
+    background-color: #fff; /* تغيير الخلفية عند التمرير */
+    color: #003366; /* تغيير لون النص عند التمرير */
+    transform: scale(1.1); /* تكبير عند التمرير */
+    padding: 8px 22px; /* زيادة حجم الخلفية */
+    border-radius: 5px; /* جعل الزوايا أكثر انحناءً */
+    box-shadow: 0 1px 13px white; /* إضافة ظل */
+}
+
+nav ul li a.active {
+    background-color: #fff; /* لون خلفية خاص للرابط النشط */
+    color: #003366; /* لون نص خاص للرابط النشط */
+    font-weight: bold; /* جعل الخط عريض */
+    padding: 8px 22px; /* زيادة حجم الخلفية */
+    border-radius: 5px; /* جعل الزوايا أكثر انحناءً */
+    box-shadow: white; /* ظل أقوى للرابط النشط */
+}
+
+/* محتوى مميزات النظام */
+.section {
+    background-color: #ffffff; /* لون خلفية القسم */
+    margin: 10px auto; /* هوامش تلقائية */
+    padding: 20px; /* إضافة حشو داخلي */
+    border-radius: 15px; /* زوايا دائرية للقسم */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل للقسم */
+    max-width: 100%; /* الحد الأقصى للعرض */
+    text-align: center; /* محاذاة النص في المنتصف */
+    font-size: 20px; /* حجم الخط للقسم */
+    font-weight: bold; /* جعل النص عريض */
+    transition: transform 0.9s; /* تأثير الانتقال */
+}
+
+.section:hover {
+    transform: translateY(0px); /* رفع القسم عند التمرير */
+}
+
+/* نص مميزات النظام */
+.section h2 {
+    color: #003366; /* لون النص للعناوين داخل القسم */
+    font-size: 1.7rem; /* حجم الخط للعناوين داخل القسم */
+    margin-top: 20px; /* هوامش علوية */
+    margin-bottom: 50px; /* هوامش سفلية */
+}
+
+/* ايقونات مميزات النظام */
+.feature {
+    display: inline-table; /* عرض العناصر كجدول */
+    align-items: center; /* محاذاة العناصر في المنتصف */
+    margin: 20px 0; /* هوامش عمودية */
+}
+
+/* 2ايقونات مميزات النظام */
+.feature img {
+    width: 200px; /* عرض الصورة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    margin-right: 10px; /* هوامش جانبية للصورة */
+}
+
+/* مربعات الادخال */
+input, select, button {
+    width: 100%; /* عرض 100% للعناصر */
+    max-width: 250px; /* الحد الأقصى للعرض */
+    padding: 10px; /* إضافة حشو داخلي */
+    margin: 10px 0; /* هوامش عمودية */
+    border-radius: 5px; /* زوايا دائرية للعناصر */
+    border: 1px solid #ddd; /* لون وحدود العناصر */
+}
+
+/* أزرار الإضافة */
+.add-button {
+    background-color: #003366; /* لون الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+    padding: 11px; /* زيادة الحشو (padding) لزيادة الحجم */
+    font-size: 17px; /* حجم الخط للزر */
+    border-radius: 5px; /* زوايا دائرية للزر */
+    margin: 20px; /* المسافة بينه وبين العناصر الأخرى */
+    transition: background-color 0.3s, transform 0.3s; /* تأثير الانتقال */
+}
+
+.add-button:hover {
+    background-color: #218838; /* لون أغمق عند التمرير */
+    transform: translateY(0px); /* رفع الزر عند التمرير */
+}
+
+/* أزرار الحذف */
+.delete-button {
+    background-color: #003366; /* لون الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق الزر */
+    padding: 11px; /* زيادة الحشو (padding) لزيادة الحجم */
+    font-size: 17px; /* حجم الخط للزر */
+    border-radius: 5px; /* زوايا دائرية للزر */
+    transition: background-color 0.3s, transform 0.3s; /* تأثير الانتقال */
+}
+
+.delete-button:hover {
+    background-color: rgb(211, 0, 0); /* لون أغمق عند التمرير */
+    transform: translateY(0px); /* رفع الزر عند التمرير */
+}
+
+/* تصميم الجدول */
+#weeklySchedule, #taskList, #examList {
+    width: 100%; /* عرض الجدول */
+    border-collapse: collapse; /* دمج الحدود */
+    margin-top: 10px; /* هوامش أعلى */
+    margin-bottom: 20px; /* إضافة هوامش سفلية للجدول */
+}
+
+#weeklySchedule th, #weeklySchedule td, #taskList th, #taskList td, #examList th, #examList td {
+    padding: 15px; /* حشو الخلايا */
+    border: 1px solid #ddd; /* لون وحدود الخلايا */
+    text-align: center; /* محاذاة النص في الوسط */
+}
+
+/* وصف من نحن */
+p {
+    font-weight: bold; /* جعل النص عريض */
+    font-size: 1.2rem; /* حجم الخط للنص */
+}
+
+/* محتوى جميع الحقوق محفوظة */
+footer {
+    background-color: #003366; /* لون خلفية الفوتر */
+    color: #ffffff; /* لون النص في الفوتر */
+    padding: 25px; /* حشو داخلي للفوتر */
+    text-align: center; /* محاذاة النص في المنتصف */
+    border-radius: 15px; /* زوايا دائرية للفوتر */
+}
+
+/* نص الوقت الحالي */
+#currentTime {
+    font-size: 20px; /* حجم الخط للوقت الحالي */
+    margin-top: 10px; /* هوامش علوية */
+    color: white; /* لون النص للوقت الحالي */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cys_idea.css">
+    <title>جدول المهام اليومية</title>
+</head>
+<bodybr>
+    <header>
+        <img src="images/خلفية شفافه بيضاBlue and Purple Illustrative Brain Tech Artificial Intelligence Logo.png" alt="شعار الموقع" class="logo">
+        <div id="currentTime"></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="lectures_schedule.html">جدول المحاضرات</a></li>
+            <li><a href="daily_tasks.html">جدول المهام اليومية</a></li>
+            <li><a href="exam_schedule.html">جدول الامتحانات</a></li>
+            <li><a href="about_us.html">من نحن</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <h2>إضافة مهمة جديدة</h2>
+    <label for="taskName">اسم المهمة:</label>
+    <input type="text" id="taskName" placeholder="Assignment">
+    
+    <label for="taskDate">التاريخ:</label>
+    <input type="date" id="taskDate">
+    
+    <label for="taskTime">الوقت:</label>
+    <input type="time" id="taskTime">
+    
+    <button class="add-button" onclick="addTask()">إضافة مهمة</button>
+    
+    <h2>المهام المضافة</h2>
+    <table id="taskList">
+        <thead>
+            <tr>
+                <th>اسم المهمة</th>
+                <th>التاريخ</th>
+                <th>الوقت</th>
+                <th>الإجراءات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- سيتم ملء المحتوى هنا -->
+        </tbody>
+    </table>
+    </div>
+    <footer>
+        <p>© 2024 CYS IDEA - جميع الحقوق محفوظة</p>
+    </footer>
+    <script src="cys_idea.js"></script>
+</body>
+</html>
